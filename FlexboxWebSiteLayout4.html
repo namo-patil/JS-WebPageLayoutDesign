@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout-4</title>
+    </head>
+    <title>Example</title>
+    <style>
+        header {
+            display: flex;
+            flex-flow: column wrap;
+            background: tomato;
+            align-content: center;
+            font-weight: bold;
+            font-size: larger;
+            padding: 30px;
+        }
+        footer {
+            display: flex;
+            flex-flow: column wrap;
+            background: yellowgreen;
+            align-content: center;
+            font-weight: bold;
+            font-size: larger;
+            padding: 20px;
+        }
+        .outer-col-1 {
+            background: #D7E8D4;
+            flex: 1;
+        }
+        .outer-col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+        }
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            text-align: center;
+        }
+        .inner-col {
+            text-align: left;
+            background-color: deepskyblue;
+            flex: 4;
+        }
+        .inner-row article {
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .sideBarItem {flex: 2; padding: 10px;border: 0px solid green;} 
+        .sideBarLeftItem {background-color: gold;}
+        .sideBarRightItem {background-color: hotpink;}
+    </style>
+    <body>
+        <header class="header">Header-Layout4</header>
+        <div class="inner-row">
+            <sidebar class="sideBarItem sideBarLeftItem">LeftSideBar</sidebar>
+            <section class="inner-col">
+                <article>
+                    <h2>First article</h2>
+                    <p>
+                        A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.
+                    </p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>
+                        A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.
+                    </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>
+                        A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.
+                    </p>
+                    <p>
+                        A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China. Tigers and leopards are animals that live in China's forests in the north.
+                    </p>
+                </article>
+        </section>
+        <sidebar class="sideBarItem sideBarRightItem">RightSideBar <p>Reference: <a href="https://www.javatpoint.com/collections-in-java">javaTpoint</a></p></sidebar>
+        </div>
+    <footer class="footer">Footer</footer>
+    </body>
+</html>
